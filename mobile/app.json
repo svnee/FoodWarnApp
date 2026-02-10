@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "FoodWarnLux",
+    "slug": "foodwarnlux",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#0068B4",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "lu.foodwarn.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "FoodWarnLux needs camera access to scan product barcodes and check for recalls."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0068B4"
+      },
+      "package": "lu.foodwarn.app",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "FoodWarnLux needs camera access to scan product barcodes and check for recalls."
+        }
+      ]
+    ]
+  }
+}
